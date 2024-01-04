@@ -7,9 +7,10 @@ type Props = {
 const products = ['pants', 'skirt'];
 
 export default function ProductPage({ params }: Props) {
-  if (!products.includes(params.slug)) {
-    notFound();
-  }
+  // if (!products.includes(params.slug)) {
+  //   notFound();
+  // }
+
   return (
     <>
       <h1>{params.slug} page</h1>
