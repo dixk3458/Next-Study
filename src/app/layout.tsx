@@ -16,12 +16,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <header>
-          <Navbar />
+    <html className={inter.className} lang="en">
+      <body className="w-full bg-slate-500">
+        <header className="sticky top-0 z-10 shadow-white shadow-lg">
+          <div className="max-w-screen-xl mx-auto">
+            <Navbar />
+          </div>
         </header>
-        <main>{children}</main>
+        <main className="w-full flex justify-center pt-4 ">{children}</main>
       </body>
     </html>
   );

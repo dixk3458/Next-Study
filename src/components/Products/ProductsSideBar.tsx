@@ -10,11 +10,11 @@ type Product = {
 
 export default function ProductsSideBar({ products }: Props) {
   return (
-    <div>
-      <ul>
+    <div className="basis-1/6 bg-gray-700 py-4 rounded-md">
+      <ul className="text-xl text-gray-100 font-bold uppercase ">
         {products.map(({ title }) => {
           return (
-            <li key={title}>
+            <li className="text-center" key={title}>
               <Link href={`/products/${title}`}>{title}</Link>
             </li>
           );

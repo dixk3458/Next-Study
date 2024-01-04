@@ -12,9 +12,9 @@ export default function ProductPage({ params }: Props) {
   // }
 
   return (
-    <>
-      <h1>{params.slug} page</h1>
-    </>
+    <div className="flex flex-col items-center bg-blue-50 rounded-md ">
+      <h1 className="text-2xl font-bold">{params.slug} page</h1>
+    </div>
   );
 }
 
